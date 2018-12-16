@@ -1,7 +1,37 @@
-body {
-  display: grid;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
-} 
+@font-face {
+  font-family: "AdventPro";
+  font-style: normal;
+  font-weight: 400;
+  src: local('AdventPro-Regular'), url(../fonts/AdventPro-Regular.ttf) format('ttf');
+}
+html {
+  box-sizing: border-box;
+  font-family: "AdventPro", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  border: 0;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  transition-property: background-color, box-shadow;
+  transition-duration: .5s;
+}
+.btn:hover {
+  background-color: var(--secundary);
+  box-shadow: var(--shadow);
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

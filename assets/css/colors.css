@@ -1,0 +1,7 @@
+:root {
+  --primary: #0c1d3b;
+  --secundary: #2b549b;
+  --dark: #000;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 103, .8);
+}
