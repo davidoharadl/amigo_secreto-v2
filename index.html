@@ -4,14 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Site para facilitar o sorteio do amigo oculto, podendo receber por sms ou por email">
+  <meta name="keywords" content="amigo oculto, amigo secreto, sorteio de amigo oculto, sorteio de amigo secreto, sorteio de amigo secreto por sms,sorteio de amigo secreto por email, sorteio de amigo oculto por sms, sorteio de amigo oculto por email">
+  
   <title>Sorteio de Amigo Secreto</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/colors.css">
   <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
   <div class="wrapper">
+
     <header>
       <nav class="wrap-menu">
         <a class="btnMenu btnMenu_open" href="#">Menu</a>
@@ -20,13 +26,13 @@
             Sair
           </li>
           <li class="menu-item">
-            <a class="menu-item-action" href="#">Início</a>
+            <a class="menu-item-action" href="index.html">Início</a>
           </li>
           <li class="menu-item">
-            <a class="menu-item-action" href="#">Sobre</a>
+            <a class="menu-item-action" href="#sobre">Sobre</a>
           </li>
           <li class="menu-item">
-            <a class="menu-item-action" href="#">Como Funciona</a>
+            <a class="menu-item-action" href="#comoFunciona">Como Funciona</a>
           </li>
         </ul>
       </nav>
@@ -35,20 +41,22 @@
       </div>
       
     </header>
-    <!-- Header End -->
+
     <main>
+
       <section class="begin">
         <h1>Vamos facilitar o sorteio do seu amigo secreto, só não podemos ajudar com a compra do presente!</h1>
         <a class="btn btnLarge" href="#">Vamos Iniciar</a>
       </section>
-      <section class="sobre">
+
+      <section class="sobre" id="sobre">
           <h2>Sobre</h2>
           <img src="assets/imagens/about_640.png" alt="Ilustração de duas pessoas conversando">
           <p>Lorem Ipsum vamos conversar sobre todas as coisas que eu souber da empresa que ainda 
           não sei.</p>
         </section>
-        <!-- Sobre End -->
-        <section class="comoFunciona">
+
+        <section class="comoFunciona" id="comoFunciona">
           <h2>Como Funciona</h2>
           <article class="comoFunciona-item">
             <img src="assets/imagens/devices.png" alt="Aparelhos de acesso a internet">
@@ -63,16 +71,17 @@
             <p>Agora se preocupa em pagar o presente.</p>
           </article>
         </section>
-        <!-- ComoFunciona ENd -->
+
     </main>
-    <!-- Main End -->
+
     <footer>
+
       <p>Copyright &copy; Ambience Solutions - 2018</p>
       <p>Copyright &copy; Ambience Solutions - 2018</p>
+
     </footer>
-    <!-- Footer End -->
+
   </div>
-  <!-- Wrapper end -->
   <script src="js/btn_menu.js"></script>
 </body>
 </html>

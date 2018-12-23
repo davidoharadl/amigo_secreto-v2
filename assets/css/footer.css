@@ -1,0 +1,7 @@
+footer {
+  min-height: 135px;
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 2em;
+  font-size: .5em;
+}

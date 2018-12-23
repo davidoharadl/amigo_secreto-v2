@@ -4,11 +4,16 @@
   font-weight: 400;
   src: local('AdventPro-Regular'), url(../fonts/AdventPro-Regular.ttf) format('ttf');
 }
-html {
+* {
   box-sizing: border-box;
   font-family: "AdventPro", Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
+
+body {
+  text-align: center;
+}
+
 ul {
   list-style: none;
 }
@@ -34,4 +39,15 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.8em;
+  color: var(--primary);
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1.6em;
 }
