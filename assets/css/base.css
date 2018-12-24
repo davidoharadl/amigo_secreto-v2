@@ -35,6 +35,17 @@ ul {
   background-color: var(--secundary);
   box-shadow: var(--shadow);
 }
+
+.btn-voltar {
+  border: 1px solid var(--primary);
+  background-color: var(--light);
+  color: var(--primary);
+  font-weight: bold;
+  margin-top: 1em;
+}
+.btn-voltar:hover {
+  color: var(--light);
+}
 img {
   max-width: 100%;
   display: block;

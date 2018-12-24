@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Site para facilitar o sorteio do amigo oculto, podendo receber por sms ou por email">
+        <meta name="keywords" content="amigo oculto, amigo secreto, sorteio de amigo oculto, sorteio de amigo secreto, sorteio de amigo secreto por sms,sorteio de amigo secreto por email, sorteio de amigo oculto por sms, sorteio de amigo oculto por email">
+        
+        <title>Sorteio de Amigo Secreto</title>
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/colors.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+      </head>
+<body>
+
+  <div class="wrapper">
+
+    <header>
+     <a class="btn btn-voltar" href="index.html">Voltar</a>      
+    </header>
+
+    <main>
+
+      <form action="#" class="formInfoJogo">
+        
+        <div class="formInfoJogo-area">
+          <label for="opcaoDeEnvio">Opção de envio</label>
+          <select name="opcaoDeEnvioDoSorteio" id="opcaoDeEnvio">
+            <option value="Undefined" selected>selecione</option>
+            <option value="sms">SMS</option>
+            <option value="email">E-mail</option>
+          </select>
+        </div>
+
+        <div class="formInfoJogo-area">
+          <label for="qntDeAmigos">Número de participantes</label>
+          <input type="number" id="qntDeAmigosOcultos" name="qntDeAmigosOcultos">
+        </div>
+
+      </form>
+<hr>
+      <form action="#" class="formInfoParticipantes">
+
+        <div class="participante-group">
+          
+          <div class="participante participante-nome">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+          
+          </div>
+          
+          <div class="participante participante-email">
+          
+            <label for="email" id="label-opcao">Email:</label>
+            <input type="email" id="email" name="dado">
+          
+          </div>
+        
+        </div>  
+        
+      </form>
+
+    </main>
+
+    <footer>
+
+      <p>Copyright &copy; Ambience Solutions - 2018</p>
+      <p>Copyright &copy; Ambience Solutions - 2018</p>
+  
+    </footer>
+  </div>
+
+  <script src="js/btn_menu.js"></script>
+  <script src="js/iniciar.js"></script>
+</body>
+</html>

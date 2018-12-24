@@ -1,5 +1,6 @@
 header {
   display: flex;
+  justify-content: space-around;
 }
 
 .wrap-menu {
@@ -67,4 +68,8 @@ header {
 
 .menu-item-action:hover {
   color: var(--secundary);
+}
+
+.btn-voltar {
+  margin: 1em auto;
 }

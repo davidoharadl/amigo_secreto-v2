@@ -1,3 +1,6 @@
+main {
+  margin-bottom: 3em;
+}
 .begin {
   background-image: url("../imagens/img-homepage.jpeg");
   background-position: center bottom;
@@ -6,7 +9,6 @@
   background-size: cover;
   padding: 1em 1em 2em 1em;
   color: var(--light);
-  /* border: 1px solid transparent; */
 }
 
 .begin h1 {
@@ -24,4 +26,108 @@
 .comoFunciona-item img {
   width: 38%;
   margin: auto;
+}
+
+/* INICIAR.HTML */
+
+.formInfoJogo {
+  padding: 2em;
+}
+
+.formInfoJogo-area {
+  margin: 1em;
+}
+
+.formInfoJogo-area label, .formInfoJogo-area select, .formInfoJogo-area input  {
+  display: block;
+  width: 100%;
+}
+
+.participante-group {
+  padding: .2em;
+}
+.participante {
+  margin: 1em;
+}
+
+.displayNone {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .begin {
+    background-position: -100px bottom;
+    padding: 3em 3em 8em 3em;
+    margin-bottom: 3em;
+  }
+  .begin h1 {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+  }
+  .begin .btn {
+    padding: 1em 2em;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .sobre .container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto 5em auto; 
+    flex-wrap: nowrap;
+
+  }
+  .sobre img {
+    flex-basis: 50%;
+  }
+  .sobre p {
+    flex-basis: 50%;
+    text-align: justify;
+    padding: 1em;
+  }
+
+  .comoFunciona {
+    margin-bottom: 4em;
+  }
+  .comoFunciona .container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+  .comoFunciona .comoFunciona-item {
+    flex-basis: 33%;
+    text-align: center;
+    justify-content: space-around;
+  }
+  /* INICIAR.HTML */
+  form {
+    font-size: 1.2em;
+  }
+  .formInfoJogo-area select, .formInfoJogo-area input {
+    padding: .2em;
+    width: 50%;
+    margin: auto;
+  }
+  
+}
+
+@media (min-width: 1280px) {
+  
+  .begin {
+    background-position: 0px bottom;
+    padding: 3em 3em 8em 3em;
+  }
+
+  .comoFunciona .comoFunciona-item {
+    flex-basis: 33%;
+    text-align: center;
+    align-self: baseline;
+  }
+
+  /* INDEX.HTML */
+  formInfoJogo-area select, .formInfoJogo-area input {
+    padding: .2em;
+    width: 50%;
+    margin: auto;
+  }
 }
