@@ -45,10 +45,11 @@ header {
   background-position: 1rem center;
   padding: 1.2rem 0 1.2rem 1rem;
   text-indent: -9999px;
+  width: 50px;
 }
 
 .btnMenu_close {
-  background-color: #747c81;
+  width: 50px;
 }
 
 .menu-item {
