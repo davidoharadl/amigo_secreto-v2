@@ -17,6 +17,10 @@ main {
   text-align: justify;
 }
 
+.sobre {
+  padding-top: 4em;
+}
+
 .comoFunciona-item {
   display: flex;
   flex-direction: column;
@@ -43,8 +47,20 @@ main {
   width: 100%;
 }
 
+.form-info-participantes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.form-info-participantes .btn {
+  display: block;
+}
 .participante-group {
+  flex-basis: 30%;
   padding: .2em;
+}
+.participante-group input {
+  margin-left: .3em;
 }
 .participante {
   margin: 1em;
@@ -75,7 +91,7 @@ main {
     width: 90%;
     margin: 0 auto 5em auto; 
     flex-wrap: nowrap;
-
+    flex-direction: column;
   }
   .sobre img {
     flex-basis: 50%;
@@ -117,7 +133,13 @@ main {
     background-position: 0px bottom;
     padding: 3em 3em 8em 3em;
   }
-
+  .sobre .container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto 5em auto; 
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
   .comoFunciona .comoFunciona-item {
     flex-basis: 33%;
     text-align: center;
