@@ -1,5 +1,5 @@
 function adicionarCamposInfo(optionSend) {
-  const destinoDoElemento = document.querySelector('.form-info-participantes');
+  const destinoDoElemento = document.querySelector('.container-info-participantes');
   const participanteEmail = montarParticipante("participante", "Nome:","nome","text",'nome','nome', "E-mail:", optionSend, optionSend,optionSend, optionSend);
   const participanteSMS = montarParticipante("participante", "Nome:","nome","text",'nome','nome', "Telefone:", "number", "text","fone", "fone");
   if(optionSend === "email"){
@@ -55,7 +55,7 @@ function montarParticipante(classOfDiv,contentLabel, forr, typeInput, idInput, n
   return div;
 }
 function limparFormDeInforParticipantes() {
-  const form = document.querySelector('.form-info-participantes');
+  const form = document.querySelector('.container-info-participantes');
   form.innerHTML ="";
 }
 
@@ -65,6 +65,7 @@ btnConfirma.addEventListener('click', function(event){
 
   event.preventDefault();
   limparFormDeInforParticipantes();
+  limparBotaoSubmit();
   const qntDeParticipantes = document.querySelector("#qntDeAmigosOcultos").value;
   const opcaoDeEnvio = document.querySelector("#opcaoDeEnvio").value;
   
@@ -81,4 +82,14 @@ function addBotaoSubmit() {
   botao.classList.add("btn");
   const form = document.querySelector('.form-info-participantes');
   form.appendChild(botao);
+}
+
+function limparBotaoSubmit() {
+  const form = document.querySelector('.form-info-participantes');
+  console.log(form);
+  const btn = form.querySelector(".btn");
+  console.log(btn)
+  if(btn){
+    form.removeChild(btn);
+  }
 }
